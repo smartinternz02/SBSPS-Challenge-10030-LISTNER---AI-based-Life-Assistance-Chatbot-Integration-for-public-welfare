@@ -5,11 +5,12 @@ from telegram.ext import Updater, MessageHandler, Filters
 # importing telegram tools from telegram.ext
 
 # Set up the Telegram bot using your API token
-bot = telegram.Bot(token='6019606505:AAE2mUrwYn0L7E480AHAQ9WgItVzN937Tjw')
-updater = Updater(token='6019606505:AAE2mUrwYn0L7E480AHAQ9WgItVzN937Tjw', use_context=True)
+bot = telegram.Bot(token='your_telegram_bot
+_token')
+updater = Updater(token='your_telegram_bot_token', use_context=True)
 
 # Set up the OpenAI API using your API key
-openai.api_key = "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"
+openai.api_key = "your_openai_api_key"
 
 def echo(update, context):
     user_text = update.message.text
